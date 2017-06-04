@@ -1,0 +1,25 @@
+cse374-17wi-br
+
+Student 1: Yunsi Mou
+Student 2: Yirou Luo
+
+This project is mainly divided as:
+- mem.h (Luo)
+- getmem.c (Luo)
+- freemem.c (Mou)
+- get_mem_stats.c (Luo)
+- print_heap.c (Luo)
+- mem_utils.c (Mou)
+- mem_impl.h (Mou)
+- bench.c (Luo)
+- Makefile (Mou)
+
+Our free list is designed as a linked list of free nodes. Each free node has two fields:
+1. size storing the total amount storage of this block in bytes,
+2. next which is pointer points to the next free node in the linked list.
+
+no extra work.
+
+Our program passed all the tests on different scales smoothly. The results showed that the run time of under 50000 operations of randomly calling getmem/freemem can be ignored (almost 0), and that of 1 million operations is around 1 second. So this program is efficient.
+
+We mainly got reference from StackOverFlow and Google.
