@@ -1,4 +1,5 @@
 cse374-17wi-br
+Intermediate Programming Concepts & Tools Project(C):
 
 Student 1: Yunsi Mou
 Student 2: Yirou Luo
@@ -18,7 +19,6 @@ Our free list is designed as a linked list of free nodes. Each free node has two
 1. size storing the total amount storage of this block in bytes,
 2. next which is pointer points to the next free node in the linked list.
 
-no extra work.
 
 Our program passed all the tests on different scales smoothly. The results showed that the run time of under 50000 operations of randomly calling getmem/freemem can be ignored (almost 0), and that of 1 million operations is around 1 second. So this program is efficient.
 
